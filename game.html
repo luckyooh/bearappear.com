@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Survivors | Epic Survival Game with Endless Monster Battles</title>
+    <meta name="description" content="Play Monster Survivors, an intense action survival game where you battle endless waves of monsters. Upgrade your character, collect power-ups and see how long you can survive!">
+    <link rel="canonical" href="https://BearAppear.com/" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'apple-blue': '#0066CC',
+                        'apple-gray': '#F5F5F7',
+                        'apple-dark': '#1D1D1F'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-apple-gray text-apple-dark font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 md:flex md:justify-between md:items-center">
+            <div class="flex justify-between items-center">
+                <a href="/" class="text-2xl font-bold text-apple-blue tracking-tight">Monster Survivors</a>
+                <div class="md:hidden">
+                    <button type="button" class="text-apple-dark hover:text-apple-blue focus:outline-none" id="menu-toggle">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="hidden md:flex md:items-center md:justify-end space-x-6" id="mobile-menu">
+                <a href="#about" class="px-2 py-1 text-apple-dark hover:text-apple-blue">About</a>
+                <a href="#how-to-play" class="px-2 py-1 text-apple-dark hover:text-apple-blue">How to Play</a>
+                <a href="#features" class="px-2 py-1 text-apple-dark hover:text-apple-blue">Features</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="container mx-auto px-4 py-12 md:py-20 text-center">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-apple-dark">Monster Survivors</h1>
+        <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-600">Battle endless waves of monsters in this thrilling survival action game where every second counts!</p>
+    </header>
+
+    <!-- Game iframe -->
+    <section class="container mx-auto px-4 py-4 mb-12">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <div class="relative w-full" style="padding-top: 56.25%;">
+                <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" 
+                        class="absolute top-0 left-0 w-full h-full border-none"
+                        title="Play Monster Survivors Online"
+                        allow="fullscreen"
+                        loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Game -->
+    <section id="about" class="container mx-auto px-4 py-12 bg-white rounded-2xl shadow-lg mb-12">
+        <h2 class="text-3xl font-bold mb-6 text-apple-dark border-b pb-3">About Monster Survivors</h2>
+        <div class="prose max-w-none text-gray-700">
+            <p class="mb-4">Monster Survivors is an intense survival action game that puts your skills and strategy to the test. Face relentless waves of increasingly powerful monsters as you fight to survive in a world overrun by creatures of all shapes and sizes.</p>
+            <p class="mb-4">With roguelike elements and procedural generation, every playthrough offers a unique experience. Collect power-ups, level up your character, and unlock new abilities as you progress through this challenging adventure. How long can you survive?</p>
+        </div>
+    </section>
+
+    <!-- How to Play -->
+    <section id="how-to-play" class="container mx-auto px-4 py-12 bg-white rounded-2xl shadow-lg mb-12">
+        <h2 class="text-3xl font-bold mb-6 text-apple-dark border-b pb-3">How to Play</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div>
+                <h3 class="text-xl font-semibold mb-3">Controls:</h3>
+                <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>Use WASD or arrow keys to move your character</li>
+                    <li>Attacks are automatic - position yourself strategically</li>
+                    <li>Press Space to use special abilities when available</li>
+                    <li>ESC to pause the game</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-3">Tips for Success:</h3>
+                <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>Collect experience gems to level up faster</li>
+                    <li>Choose upgrades that complement your playstyle</li>
+                    <li>Keep moving to avoid being surrounded</li>
+                    <li>Prioritize health pickups when your HP is low</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Features -->
+    <section id="features" class="container mx-auto px-4 py-12 bg-white rounded-2xl shadow-lg mb-12">
+        <h2 class="text-3xl font-bold mb-6 text-apple-dark border-b pb-3">Game Features</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="p-5 rounded-lg shadow-md bg-apple-gray">
+                <h3 class="text-xl font-semibold mb-3 text-apple-blue">Character Progression</h3>
+                <p class="text-gray-700">Level up your character and choose from various upgrades and abilities to create a unique build for each run.</p>
+            </div>
+            <div class="p-5 rounded-lg shadow-md bg-apple-gray">
+                <h3 class="text-xl font-semibold mb-3 text-apple-blue">Diverse Enemies</h3>
+                <p class="text-gray-700">Face dozens of different monster types, each with unique behaviors, attack patterns, and weaknesses.</p>
+            </div>
+            <div class="p-5 rounded-lg shadow-md bg-apple-gray">
+                <h3 class="text-xl font-semibold mb-3 text-apple-blue">Procedural Generation</h3>
+                <p class="text-gray-700">Every playthrough is different with procedurally generated levels and enemy spawns for endless replayability.</p>
+            </div>
+            <div class="p-5 rounded-lg shadow-md bg-apple-gray">
+                <h3 class="text-xl font-semibold mb-3 text-apple-blue">Power-Ups & Items</h3>
+                <p class="text-gray-700">Collect various power-ups and items that can dramatically change your gameplay strategy and effectiveness.</p>
+            </div>
+            <div class="p-5 rounded-lg shadow-md bg-apple-gray">
+                <h3 class="text-xl font-semibold mb-3 text-apple-blue">Epic Boss Battles</h3>
+                <p class="text-gray-700">Test your skills against massive boss monsters that appear at set intervals with devastating attacks.</p>
+            </div>
+            <div class="p-5 rounded-lg shadow-md bg-apple-gray">
+                <h3 class="text-xl font-semibold mb-3 text-apple-blue">Achievement System</h3>
+                <p class="text-gray-700">Complete challenges and earn achievements to unlock new characters, weapons, and special bonuses.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Requirements -->
+    <section class="container mx-auto px-4 py-12 bg-white rounded-2xl shadow-lg mb-12">
+        <h2 class="text-3xl font-bold mb-6 text-apple-dark border-b pb-3">System Requirements</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div>
+                <h3 class="text-xl font-semibold mb-3">Minimum Requirements:</h3>
+                <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>Modern web browser (Chrome, Firefox, Safari, Edge)</li>
+                    <li>2GB RAM</li>
+                    <li>Any modern CPU (2012 or newer)</li>
+                    <li>Stable internet connection</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-3">Recommended Experience:</h3>
+                <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                    <li>4GB RAM or higher</li>
+                    <li>Desktop or laptop computer</li>
+                    <li>External mouse for precise control</li>
+                    <li>High-speed internet connection</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-apple-dark text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold text-white">Monster Survivors</h2>
+                    <p class="text-gray-400">© 2025 BearAppear.com. All rights reserved.</p>
+                </div>
+                <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+                    <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for mobile menu toggle -->
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
